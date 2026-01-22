@@ -45,7 +45,7 @@
     // Git commands to update the repository
     const { exec } = require('child_process');
 
-    exec('cd "C:\\Users\\Ashit Rai\\Downloads\\Ultracortex_web_viewer" && git init && git remote add origin https://github.com/ashitrai04/tata-elxsi-autism.git && git add . && git commit -m "Update ChetnaCap viewer and GLB path" && git branch -M main && git push -u origin main', (error, stdout, stderr) => {
+    exec('cd "C:\\Users\\Ashit Rai\\Downloads" && git clone https://github.com/ashitrai04/tata-elxsi-autism.git', (error, stdout, stderr) => {
       if (error) {
         console.error(`Error: ${error.message}`);
         return;
